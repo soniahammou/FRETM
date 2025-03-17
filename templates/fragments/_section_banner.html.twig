@@ -1,0 +1,7 @@
+<section class="section-banner">
+    <h2>{{ title }}</h2>
+    <p>{{ paragraph}}</p>
+       {% if button_link is defined and button_text is defined %}
+      <a href="{{ button_link }}" class="btn">{{ button_text }}</a>
+    {% endif %}
+</section>

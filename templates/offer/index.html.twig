@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+
+{% include 'fragments/_section_banner.html.twig' with {
+  title: 'Nos abonnements',
+  paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin ligula ut poLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin ligula ut po"
+} %}
+
+
+
+
+{% include 'fragments/_story_section.html.twig' with {
+  image: 'assets/img/transport.jpg',
+  alt: 'Illustration du transport',
+  paragraph1: "  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin ligula ut porta iaculis. Duis ultr
+  ices suscipit mauris, blandit bibendum arcu condimentum id. In nibh nunc, venenatis ac gravida sed, cursus non lacus.
+   Sed at interdum risus. Quisque quis vulputate dui, a aliquet nulla. Mauris quis suscipit odio, ultrices fermentum a",
+  paragraph2: "
+  Morbi cursus nisl purus, in venenatis magna lacinia a.Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+   Donec sollicitudin ligula ut porta iaculis. Duis ultrices suscipit mauris, blandit bibendum arcu condimentum id. In n
+   ibh nunc, venenatis ac gravida sed, cursus non lacus. Sed at interdum risus. Quisque quis vulputate dui, a aliquet nul
+   la. Mauris quis suLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin ligula ut porta iaculis. D
+   uis ultrices suscipit mauris, blandit bibendum 
+  arcu condimentum id. In nibh nunc, venenatis ac gravida sed, cursus non lacus. Sed at interdum risus. 
+  
+  Quisque quis vulputate dui, a aliquet nulla. Mauris quis suscipit odio, ultrices fermentum ante. Morbi cursus n
+  isl purus, in venenatis magna lacinia a.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicit
+  udin ligula ut porta iaculis. Duis ultrices suscipit mauris, blandit bibendum arcu condimentum id. In nibh nunc,"
+} %}
+
+
+{% include 'fragments/_offer_card_list.html.twig' with { abonnements: abonnements } %}
+
+{% endblock %}

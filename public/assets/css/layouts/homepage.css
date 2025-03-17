@@ -1,0 +1,107 @@
+.section-banner {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding : 2rem 20rem 2rem 20rem;
+  text-align: center;
+  background-color: #268183;
+
+
+}
+.section-banner h2 {
+  color : white;
+}
+.section-banner p {
+text-align: justify;
+color : white;
+}
+
+
+.section-container	 {
+  display: flex;
+  /* flex-basis: 50%; */
+}
+
+.section-content	 {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: justify;
+  flex-basis: 50%; 
+  padding : 2rem;
+
+}
+
+.section-img {
+  flex-basis: 50%; 
+
+}
+
+.section-img img{
+  width: 100%;;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+
+/* media queries */
+
+/* 🌍 RESPONSIVE DESIGN */
+
+/* ✅ Tablettes (≤ 1024px) */
+@media screen and (max-width: 1024px) {
+  .section-banner {
+    padding: 2rem 10rem;
+  }
+
+  .section-container {
+    flex-direction: column;
+  }
+
+  .section-content {
+    flex-basis: 100%;
+    padding: 1.5rem;
+  }
+
+  .section-img {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .section-img img {
+    height: auto;
+  }
+}
+
+/* ✅ Mobiles (≤ 768px) */
+@media screen and (max-width: 768px) {
+  .section-banner {
+    padding: 0rem;
+  }
+
+  .section-container {
+    flex-direction: column;
+  }
+
+  .section-content {
+    text-align: left;
+  }
+
+  .section-banner h2,
+  .section-banner p {
+    text-align: center;
+  }
+
+  .section-img {
+    flex-basis: 100%;
+  }
+
+  .section-img img {
+    height: auto;
+  }
+}

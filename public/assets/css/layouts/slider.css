@@ -1,0 +1,76 @@
+/* slider */
+
+.homepage-slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+position: relative;
+height: 70vh;
+
+}
+
+
+.slider__btn{
+  background-color :black;
+  border-radius: 3px;
+  color: var(--white-color);
+  padding: 0.5rem;
+  z-index: 1;
+  font-weight: bold;
+}
+
+
+.slider__img {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.slider__img--current {
+  opacity: 1;
+  /* z-index: 1; */
+}
+
+
+/* 🌍 RESPONSIVE DESIGN */
+
+/* ✅ Tablettes (≤ 1024px) */
+@media screen and (max-width: 1024px) {
+  .homepage-slider {
+    height: 30vh;
+  }
+
+  .slider__btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* ✅ Mobiles (≤ 768px) */
+@media screen and (max-width: 768px) {
+  .homepage-slider {
+    height: 40vh;
+  }
+
+  .slider__btn {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* ✅ Très petits écrans (≤ 480px) */
+@media screen and (max-width: 480px) {
+  .homepage-slider {
+    height: 15vh;
+  }
+
+  .slider__btn {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.25rem;
+  }
+}

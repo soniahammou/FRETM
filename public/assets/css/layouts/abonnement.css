@@ -1,0 +1,74 @@
+.abonnement-container {
+  background-color: var(--blue-color);
+padding: 20px;
+}
+
+.abonnement-container h2 {
+color: white;
+} 
+
+.abonnement-container_content {
+text-align: center;
+}
+
+.abonnement {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.abonnement-info{
+  width: 50vh;
+  background-color: white;
+text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+
+/* ✅ Tablettes (≤ 1024px) */
+@media screen and (max-width: 1024px) {
+  .abonnement {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .abonnement-info {
+    width: 80%;
+    margin: 15px 0;
+  }
+
+  .abonnement-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ✅ Mobiles (≤ 768px) */
+@media screen and (max-width: 768px) {
+  .abonnement-container {
+    padding: 15px;
+  }
+
+  .abonnement-info {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .abonnement-gallery--image img {
+    height: auto;
+  }
+}
+
+/* ✅ Très petits écrans (≤ 480px) */
+@media screen and (max-width: 480px) {
+  .abonnement-container {
+    padding: 10px;
+  }
+
+  .abonnement-info {
+    width: 100%;
+    padding: 10px;
+  }
+}

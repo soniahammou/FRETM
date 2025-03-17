@@ -1,0 +1,18 @@
+<section class="abonnement-container">
+  <div class="abonnement-container_content">
+    <h2> Découvrez nos abonnements </h2>
+
+  </div>
+
+  <section class="abonnement">
+    {% for type, abonnement in abonnements %}
+      <section class="abonnement-info">
+        <h3> {{ type }} </h3>
+        <h4> {{ abonnement[0] }} </h4>
+        <p> {{ abonnement[1] }} </p>
+      </section>
+    {% endfor %}
+  </section>
+
+  <a href="#" class="btn">En savoir plus</a>
+</section>

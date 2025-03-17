@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Truck a pates">
+		<meta name="description" content="Truck a pates">
+		<link rel="icon" href="./assets/img/logo.png" type="image/x-icon">
+
+		<title> {% block title %} Fret Market {% endblock %} </title>
+
+		<link rel="stylesheet" href="{{ asset('assets/css/base/normalize.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/base/global.css') }}">
+
+
+    <link rel="stylesheet" href="{{ asset('assets/css/layouts/header.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/layouts/abonnement.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/layouts/homepage.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/layouts/history.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('assets/css/layouts/slider.css') }}">
+
+	</head>
+
+
+	<body>
+		{% block nav %}
+
+			<header class="app-header">
+				<nav class="app-header_nav">
+					<figure class="app-header_logo">
+					    <a href="{{ path('homepage') }}">
+						<img src="{{ asset('assets/img/logo.jpeg') }}" class="app-header_logo" alt="logo-fret-market">
+						    </a>
+
+					</figure>
+					<ul>
+						<li>
+							<a href="{{ path('app_history') }}">Notre Histoire</a>
+							</li>
+						</li>
+						<li>
+							<a href="{{ path('app_offer') }}"> Nos abonnements</a>
+								</a>
+							</li>
+						</li>
+						<li>
+		<a href="{{ path('app_secure_app') }}"> La charte de sécurité</a>
+								</a>						</li>
+
+					</ul>
+				</nav>
+			</header>
+		{% endblock %}
+
+		{% block body %}{% endblock %}
+
+
+
+		{% block footer %}
+
+			<footer>
+			
+				&copy; Copyright Fret Market 2025
+			</footer>
+<script type="module" src="{{ asset('assets/js/app.js') }}"></script>
+
+	</body>
+</html>
+		{% endblock %}

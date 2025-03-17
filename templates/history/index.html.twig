@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+{% include 'fragments/_section_banner.html.twig' with {
+  title: 'Nos Histoire',
+  paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin ligula ut poLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin ligula ut po"
+} %}
+
+
+{% include 'fragments/_story_section.html.twig' with {
+  image: 'assets/img/camions.jpg',
+  alt: 'Illustration du transport',
+  paragraph1: "Il était une fois, dans un marché du transport de marchandises en proie aux difficultés, les entreprises françaises
+    luttaient pour maintenir leurs chiffres d'affaires et leurs bénéfices. Parmi elles, la société de transport lourd dirigée
+    par M. Lakhal. Malgré des revenus décents, M. Lakhal voyait les défis croissants auxquels faisait face le secteur et
+    comprit qu'une transformation radicale était nécessaire.",
+  paragraph2: "Face à cette crise qui touchait de plein fouet le secteur, il ne pouvait rester inactif. Désireux de trouver un moyen
+    de renverser la tendance et d'aider ses confrères transporteurs, il se lança dans une quête de solutions. Cependant,
+    aucun outil existant ne répondait pleinement aux besoins de l'industrie. Il manquait des fonctionnalités
+    essentielles pour optimiser la rentabilité et l'efficacité des entreprises de transport.
+    C'est alors qu'un jour, l'inspiration le frappa. Il eut l'idée audacieuse de créer une toute nouvelle plateforme de
+    bourse de fret."
+} %}
+
+{% include 'fragments/_story_section_right_position.html.twig' with {
+  image: 'assets/img/5.jpg',
+  alt: 'Illustration du transport',
+  paragraph1: "Son objectif ? Concevoir une interface intuitive, regorgeant de fonctionnalités innovantes absentes sur le marché
+      existant. Mais surtout, il souhaitait que cette plateforme soit accessible financièrement à toutes les entreprises, en
+      particulier les petites sociétés françaises souvent laissées pour compte.",
+  paragraph2: "Ainsi naquit FretMarket, une révolution dans le monde du transport de marchandises. Cette plateforme allait non
+      seulement offrir de nouvelles opportunités commerciales, mais aussi revitaliser un secteur en difficulté en donnant
+      à chacun les moyens de prospérer, quel que soit son niveau de taille ou de ressources.
+       Et c'est ainsi que l'histoire de FretMarket commença, portée par la vision et la détermination de son fondateur, M. Lakhal, qui avait décidé de consacrer toute son énergie à cette nouvelle solution pour transformer le secteur du transport de marchandises."
+} %}
+
+
+
+
+
+
+
+{% endblock %}

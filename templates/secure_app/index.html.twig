@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+
+	{% include 'fragments/_section_banner.html.twig' with {
+  title: 'La sécurité',
+  paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin ligula ut poLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin ligula ut po"
+} %}
+
+
+	{% include 'fragments/_story_section.html.twig' with {
+  image: 'assets/img/app.png',
+  alt: 'fret-market-app',
+  title: 'Optimisation du Transport en Temps Réel',
+  paragraph1: "Les chargeurs font face à des difficultés lorsqu'ils doivent trouver un transporteur disponible en période de flux tendus pour l’expédition de leurs marchandises.",
+  paragraph2: "
+ Cette recherche peut être chronophage et ralentir leur activité. Grâce à notre plateforme, en quelques clics, ils peuvent désormais trouver eux-mêmes un transporteur disponible ou mettre à disposition leurs frets pour être rapidement pris en charge.
+Avec le suivi GPS en temps réel, leurs marchandises sont acheminées en toute sécurité, offrant une transparence totale sur le transport et une tranquillité d'esprit accrue."
+} %}
+
+
+	{% include 'fragments/_story_section_right_position.html.twig' with {
+  image: 'assets/img/application_demo.png',
+  alt: 'fret-market-app',
+  title: ' Une Solution Efficace pour Optimiser les Trajets Retours',
+  paragraph1: "Les transporteurs sont souvent confrontés à la difficulté de trouver du fret pour rentabiliser leurs trajets retours, ce qui entraîne des kilomètres parcourus à vide et une perte de rentabilité. ",
+  paragraph2: "Grâce à notre plateforme, en quelques clics, ils peuvent identifier le fret disponible à proximité et optimiser leurs trajets en toute simplicité. De plus, avec des fonctionnalités avancées, la gestion administrative est automatisée, rendant les échanges plus fluides et sans effort, pour un gain de temps et d’efficacité considérable. "
+} %}
+
+
+{% endblock %}
