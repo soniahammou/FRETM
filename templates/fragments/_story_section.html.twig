@@ -11,6 +11,10 @@
     <p>{{ paragraph1 }}</p>
     <p>{{ paragraph2 }}</p>
 
+            {% if paragraph3 is defined%}
+    <p>{{ paragraph3 }}</p>
+    {% endif %}
+
 
     {% if button_link is defined and button_text is defined %}
       <a href="{{ button_link }}" class="btn">{{ button_text }}</a>

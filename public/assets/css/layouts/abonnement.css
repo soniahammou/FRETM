@@ -1,6 +1,9 @@
 .abonnement-container {
   background-color: var(--blue-color);
 padding: 20px;
+display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .abonnement-container h2 {
