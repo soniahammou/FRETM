@@ -30,7 +30,8 @@ text-align: center;
 }
 
 
-/* ✅ Tablettes (≤ 1024px) */
+/* //medias queries */
+/* Tablettes (≤ 1024px) */
 @media screen and (max-width: 1024px) {
   .abonnement {
     flex-direction: column;
@@ -48,7 +49,7 @@ text-align: center;
   }
 }
 
-/* ✅ Mobiles (≤ 768px) */
+/* Mobiles (≤ 768px) */
 @media screen and (max-width: 768px) {
   .abonnement-container {
     padding: 15px;
@@ -64,7 +65,7 @@ text-align: center;
   }
 }
 
-/* ✅ Très petits écrans (≤ 480px) */
+/* petits écrans (≤ 480px) */
 @media screen and (max-width: 480px) {
   .abonnement-container {
     padding: 10px;

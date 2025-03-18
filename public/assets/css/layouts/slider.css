@@ -37,9 +37,9 @@ height: 70vh;
 }
 
 
-/* 🌍 RESPONSIVE DESIGN */
+/* medias queries */
 
-/* ✅ Tablettes (≤ 1024px) */
+/* Tablettes (≤ 1024px) */
 @media screen and (max-width: 1024px) {
   .homepage-slider {
     height: 30vh;
@@ -51,7 +51,7 @@ height: 70vh;
   }
 }
 
-/* ✅ Mobiles (≤ 768px) */
+/*Mobiles (≤ 768px) */
 @media screen and (max-width: 768px) {
   .homepage-slider {
     height: 40vh;
@@ -63,7 +63,7 @@ height: 70vh;
   }
 }
 
-/* ✅ Très petits écrans (≤ 480px) */
+/*   petits écrans (≤ 480px) */
 @media screen and (max-width: 480px) {
   .homepage-slider {
     height: 15vh;

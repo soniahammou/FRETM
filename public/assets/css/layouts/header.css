@@ -67,8 +67,9 @@ width: 30%;
     width: 40%;
   }
 }
+/* medias queries */
 
-/* ✅ Mobiles (≤ 768px) */
+/*  Mobiles (≤ 768px) */
 @media screen and (max-width: 768px) {
   .app-header_nav {
     flex-direction: column;
@@ -91,7 +92,7 @@ width: 30%;
   }
 }
 
-/* ✅ Très petits écrans (≤ 480px) */
+/* petits écrans (≤ 480px) */
 @media screen and (max-width: 480px) {
   .app-header_logo {
     width: 60%;
